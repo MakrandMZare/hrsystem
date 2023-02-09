@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employees_id: MyString
+  departments_id: MyString
+  salary: MyString
+  start_date: 2023-02-07
+
+two:
+  employees_id: MyString
+  departments_id: MyString
+  salary: MyString
+  start_date: 2023-02-07

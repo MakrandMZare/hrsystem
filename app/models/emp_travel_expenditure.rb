@@ -1,0 +1,2 @@
+class EmpTravelExpenditure < ApplicationRecord
+end

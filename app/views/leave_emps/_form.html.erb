@@ -1,0 +1,47 @@
+<%= form_with(model: leave_emp) do |form| %>
+  <% if leave_emp.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(leave_emp.errors.count, "error") %> prohibited this leave_emp from being saved:</h2>
+
+      <ul>
+        <% leave_emp.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :employees_id, style: "display: block" %>
+    <%= form.text_field :employees_id %>
+  </div>
+
+  <div>
+    <%= form.label :departments_id, style: "display: block" %>
+    <%= form.text_field :departments_id %>
+  </div>
+
+  <div>
+    <%= form.label :start_date, style: "display: block" %>
+    <%= form.date_field :start_date %>
+  </div>
+
+  <div>
+    <%= form.label :end_date, style: "display: block" %>
+    <%= form.date_field :end_date %>
+  </div>
+
+  <div>
+    <%= form.label :total_days, style: "display: block" %>
+    <%= form.text_field :total_days %>
+  </div>
+
+  <div>
+    <%= form.label :leave_reason, style: "display: block" %>
+    <%= form.text_field :leave_reason %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

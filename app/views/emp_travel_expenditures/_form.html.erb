@@ -1,0 +1,72 @@
+<%= form_with(model: emp_travel_expenditure) do |form| %>
+  <% if emp_travel_expenditure.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(emp_travel_expenditure.errors.count, "error") %> prohibited this emp_travel_expenditure from being saved:</h2>
+
+      <ul>
+        <% emp_travel_expenditure.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :employees_id, style: "display: block" %>
+    <%= form.text_field :employees_id %>
+  </div>
+
+  <div>
+    <%= form.label :departments_id, style: "display: block" %>
+    <%= form.text_field :departments_id %>
+  </div>
+
+  <div>
+    <%= form.label :travel_from, style: "display: block" %>
+    <%= form.text_field :travel_from %>
+  </div>
+
+  <div>
+    <%= form.label :travel_to, style: "display: block" %>
+    <%= form.text_field :travel_to %>
+  </div>
+
+  <div>
+    <%= form.label :on_date, style: "display: block" %>
+    <%= form.time_field :on_date %>
+  </div>
+
+  <div>
+    <%= form.label :from_date, style: "display: block" %>
+    <%= form.date_field :from_date %>
+  </div>
+
+  <div>
+    <%= form.label :to_date, style: "display: block" %>
+    <%= form.date_field :to_date %>
+  </div>
+
+  <div>
+    <%= form.label :reason_for_travel, style: "display: block" %>
+    <%= form.text_field :reason_for_travel %>
+  </div>
+
+  <div>
+    <%= form.label :mode_of_transportation, style: "display: block" %>
+    <%= form.text_field :mode_of_transportation %>
+  </div>
+
+  <div>
+    <%= form.label :bill_number, style: "display: block" %>
+    <%= form.text_field :bill_number %>
+  </div>
+
+  <div>
+    <%= form.label :paid_amt, style: "display: block" %>
+    <%= form.text_field :paid_amt %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

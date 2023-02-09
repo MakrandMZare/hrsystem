@@ -1,0 +1,2 @@
+class ShiftTime < ApplicationRecord
+end

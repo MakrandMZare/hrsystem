@@ -1,0 +1,2 @@
+class LeaveEmp < ApplicationRecord
+end

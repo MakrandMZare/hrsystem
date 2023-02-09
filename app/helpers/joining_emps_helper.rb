@@ -1,0 +1,2 @@
+module JoiningEmpsHelper
+end

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employees_id: MyString
+  departments_id: MyString
+  in_time: 2023-02-07 22:09:17
+  out_time: 2023-02-07 22:09:17
+
+two:
+  employees_id: MyString
+  departments_id: MyString
+  in_time: 2023-02-07 22:09:17
+  out_time: 2023-02-07 22:09:17

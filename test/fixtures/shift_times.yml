@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_shift: MyString
+  total_hours: 1
+  start_time: 2023-02-08 14:31:12
+  end_time: 2023-02-08 14:31:12
+
+two:
+  name_shift: MyString
+  total_hours: 1
+  start_time: 2023-02-08 14:31:12
+  end_time: 2023-02-08 14:31:12

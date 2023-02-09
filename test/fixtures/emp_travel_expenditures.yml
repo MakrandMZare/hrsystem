@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employees_id: MyString
+  departments_id: MyString
+  travel_from: MyString
+  travel_to: MyString
+  on_date: 2023-02-07 22:20:27
+  from_date: 2023-02-07
+  to_date: 2023-02-07
+  reason_for_travel: MyString
+  mode_of_transportation: MyString
+  bill_number: MyString
+  paid_amt: MyString
+
+two:
+  employees_id: MyString
+  departments_id: MyString
+  travel_from: MyString
+  travel_to: MyString
+  on_date: 2023-02-07 22:20:27
+  from_date: 2023-02-07
+  to_date: 2023-02-07
+  reason_for_travel: MyString
+  mode_of_transportation: MyString
+  bill_number: MyString
+  paid_amt: MyString

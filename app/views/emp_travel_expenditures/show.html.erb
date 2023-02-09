@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @emp_travel_expenditure %>
+
+<div>
+  <%= link_to "Edit this emp travel expenditure", edit_emp_travel_expenditure_path(@emp_travel_expenditure) %> |
+  <%= link_to "Back to emp travel expenditures", emp_travel_expenditures_path %>
+
+  <%= button_to "Destroy this emp travel expenditure", @emp_travel_expenditure, method: :delete %>
+</div>

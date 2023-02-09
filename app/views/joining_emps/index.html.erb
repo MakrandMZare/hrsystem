@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Joining emps</h1>
+
+<div id="joining_emps">
+  <% @joining_emps.each do |joining_emp| %>
+    <%= render joining_emp %>
+    <p>
+      <%= link_to "Show this joining emp", joining_emp %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New joining emp", new_joining_emp_path %>

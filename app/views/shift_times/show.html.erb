@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @shift_time %>
+
+<div>
+  <%= link_to "Edit this shift time", edit_shift_time_path(@shift_time) %> |
+  <%= link_to "Back to shift times", shift_times_path %>
+
+  <%= button_to "Destroy this shift time", @shift_time, method: :delete %>
+</div>
