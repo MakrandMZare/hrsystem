@@ -65,6 +65,6 @@ class JoiningEmpsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def joining_emp_params
-      params.require(:joining_emp).permit(:employees_id, :departments_id, :salary, :start_date)
+      params.require(:joining_emp).permit(:employees_id, :departments_id, :shift_time_id, :salary, :start_date)
     end
 end

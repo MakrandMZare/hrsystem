@@ -73,6 +73,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_08_090112) do
   create_table "joining_emps", force: :cascade do |t|
     t.string "employees_id"
     t.string "departments_id"
+    t.string "shift_time_id"
     t.string "salary"
     t.date "start_date"
     t.datetime "created_at", null: false

@@ -11,15 +11,21 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :employees_id, style: "display: block" %>
-    <%= form.text_field :employees_id %>
+   <div>
+    <%= form.select :employees_id, style: "display: block" %>
+    <%= form.text_field :employees_name %>
   </div>
 
   <div>
-    <%= form.label :departments_id, style: "display: block" %>
-    <%= form.text_field :departments_id %>
+    <%= form.select :departments_id, style: "display: block" %>
+    <%= form.text_field :departments_name %>
   </div>
+
+  <div>
+    <%= form.select :shift_time_id, style: "display: block" %>
+    <%= form.text_field :shift_time_id %>
+  </div>
+
 
   <div>
     <%= form.label :salary, style: "display: block" %>
