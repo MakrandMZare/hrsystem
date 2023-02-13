@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  basic: 1
+  da: 1
+  hra: 1
+  pf: 1
+  total: 1
+
+two:
+  basic: 1
+  da: 1
+  hra: 1
+  pf: 1
+  total: 1

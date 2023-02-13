@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employess: one
+  departments: one
+  salary: one
+  shift_times: one
+
+two:
+  employess: two
+  departments: two
+  salary: two
+  shift_times: two

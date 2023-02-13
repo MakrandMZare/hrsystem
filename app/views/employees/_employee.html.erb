@@ -1,22 +1,24 @@
 <div id="<%= dom_id employee %>">
-<table class="table ">
+<div class="container">
+<table class="table">
   <thead>
     <tr>
-      <th><strong>First Name:</strong></th>
-      <th><strong>Last Name:</strong></th>
-      <th><strong>Email:</strong></th>
-      <th><strong>Mobile:</strong></th>
-      <th><strong>Address:</strong></th>
-      <th><strong>Aadharcard:</strong></th>
-      <th><strong>Pancard:</strong></th>
-      <th><strong>Village:</strong></th>
-      <th><strong>City:</strong></th>
-      <th><strong>State:</strong></th>
+      <th id="first_name"><strong>First Name</strong</th>
+      <th id="last_name"><strong>Last Name</strong></th>
+      <th id="email"><strong>Email</strong></th>
+      <th id="mobile"><strong>Mobile</strong></th>
+      <th id="address"><strong>Address</strong></th>
+      <th id="aadharcard"><strong>Aadharcard</strong></th>
+      <th id="pancard"><strong>Pancard</strong></th>
+      <th id="village"><strong>Village</strong></th>
+      <th id="city"><strong>City</strong></th>
+      <th id="state"><strong>State</strong></th>
       <th><strong>Edit</strong></th>
       <th><strong>Delete</strong></th>
     </tr>
   </thead>
   <tbody>
+  
     <tr>
       <td><%= employee.first_name %></td>
       <td><%= employee.last_name %> </td>
@@ -29,6 +31,8 @@
       <td><%= employee.city %> </td>
       <td><%= employee.state %> </td>
     </tr>
+    
   </tbody>
   </table>
+  </div>
 </div>

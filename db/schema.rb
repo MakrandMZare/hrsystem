@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_08_090112) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_12_073659) do
   create_table "attendences", force: :cascade do |t|
     t.string "employees_id"
     t.string "departments_id"
@@ -24,6 +24,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_08_090112) do
     t.string "dep_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "emp_details", force: :cascade do |t|
+    t.integer "employess_id", null: false
+    t.integer "departments_id", null: false
+    t.integer "salary_id", null: false
+    t.integer "shift_times_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["departments_id"], name: "index_emp_details_on_departments_id"
+    t.index ["employess_id"], name: "index_emp_details_on_employess_id"
+    t.index ["salary_id"], name: "index_emp_details_on_salary_id"
+    t.index ["shift_times_id"], name: "index_emp_details_on_shift_times_id"
   end
 
   create_table "emp_travel_expenditures", force: :cascade do |t|
@@ -73,7 +86,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_08_090112) do
   create_table "joining_emps", force: :cascade do |t|
     t.string "employees_id"
     t.string "departments_id"
-    t.string "shift_time_id"
     t.string "salary"
     t.date "start_date"
     t.datetime "created_at", null: false
@@ -87,6 +99,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_08_090112) do
     t.date "end_date"
     t.string "total_days"
     t.string "leave_reason"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "salaries", force: :cascade do |t|
+    t.integer "basic"
+    t.integer "da"
+    t.integer "hra"
+    t.integer "pf"
+    t.integer "total"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -108,4 +130,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_08_090112) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "emp_details", "departments", column: "departments_id"
+  add_foreign_key "emp_details", "employesses"
+  add_foreign_key "emp_details", "salaries"
+  add_foreign_key "emp_details", "shift_times", column: "shift_times_id"
 end

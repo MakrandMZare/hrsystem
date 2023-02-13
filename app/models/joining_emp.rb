@@ -1,2 +1,0 @@
-class JoiningEmp < ApplicationRecord
-end
