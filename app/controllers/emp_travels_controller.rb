@@ -65,6 +65,6 @@ class EmpTravelsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def emp_travel_params
-      params.require(:emp_travel).permit(:employees_id, :departments_id, :travel_from, :travel_to, :on_date, :from_date, :to_date, :reason_for_travel)
+      params.require(:emp_travel).permit(params[:first_name], params[:dep_name], :travel_from, :travel_to, :on_date, :from_date, :to_date, :reason_for_travel)
     end
 end

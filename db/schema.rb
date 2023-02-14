@@ -56,8 +56,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_12_073659) do
   end
 
   create_table "emp_travels", force: :cascade do |t|
-    t.string "employees_id"
-    t.string "departments_id"
+    t.string "first_name"
+    t.string "dep_name"
     t.string "travel_from"
     t.string "travel_to"
     t.time "on_date"

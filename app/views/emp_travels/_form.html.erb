@@ -12,13 +12,11 @@
   <% end %>
 
   <div>
-    <%= form.label :employees_id, style: "display: block" %>
-    <%= form.text_field :employees_id %>
+    <%= select("post", "employees_id", Employee.all.collect {|e| [ e.first_name, e.id ] }, {prompt: 'Select Employee Name'}) %>
   </div>
 
   <div>
-    <%= form.label :departments_id, style: "display: block" %>
-    <%= form.text_field :departments_id %>
+    <%= select("post", "departments_id", Department.all.collect {|d| [ d.dep_name, d.id ] }, {prompt: 'Select Department Name'}) %>
   </div>
 
   <div>

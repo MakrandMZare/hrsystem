@@ -1,4 +1,11 @@
 import { Application } from "@hotwired/stimulus"
+import React from "react"
+import ReactDOM from "react-dom"
+import "controllers"
+
+//= require jquery3
+//= require popper
+//= require bootstrap
 
 const application = Application.start()
 
