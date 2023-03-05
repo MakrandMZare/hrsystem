@@ -21,9 +21,6 @@ class EmpTravelsController < ApplicationController
 
   # POST /emp_travels or /emp_travels.json
   def create
-    @emp_travel.employees.create! params.required(:employees).permit(:first_name)
-    redirect_to @emp_travel
-
     @emp_travel = EmpTravel.new(emp_travel_params)
 
     respond_to do |format|
@@ -35,7 +32,6 @@ class EmpTravelsController < ApplicationController
         format.json { render json: @emp_travel.errors, status: :unprocessable_entity }
       end
     end
-   end
   end
 
   # PATCH/PUT /emp_travels/1 or /emp_travels/1.json
@@ -62,9 +58,6 @@ class EmpTravelsController < ApplicationController
   end
 
   private
-    def set_employee
-      @emp_travel = Employee.find(params[:employee_id])
-    end
     # Use callbacks to share common setup or constraints between actions.
     def set_emp_travel
       @emp_travel = EmpTravel.find(params[:id])
@@ -74,4 +67,4 @@ class EmpTravelsController < ApplicationController
     def emp_travel_params
       params.require(:emp_travel).permit(params[:first_name], params[:dep_name], :travel_from, :travel_to, :on_date, :from_date, :to_date, :reason_for_travel)
     end
-end
+  end
