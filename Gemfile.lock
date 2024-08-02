@@ -182,7 +182,8 @@ GEM
     regexp_parser (2.6.2)
     reline (0.3.2)
       io-console (~> 0.5)
-    rexml (3.2.5)
+    rexml (3.3.3)
+      strscan
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -207,6 +208,7 @@ GEM
     sqlite3 (1.6.0-x86_64-linux)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
+    strscan (3.1.0)
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.1)
